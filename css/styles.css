@@ -1,0 +1,367 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+
+@font-face {
+  font-family: GothamBold;
+  src: url(../gothambold/Gotham-Bold.ttf);
+}
+
+@font-face {
+  font-family: GothamBook;
+  src: url(../gothambook/Gotham-Book.otf);
+}
+
+button {
+   cursor: pointer;
+}
+
+body {
+   background-color: white;
+   overflow: hidden;
+   
+}
+
+img {
+   width: 100%;
+}
+
+.outercontainer {
+   position: relative;
+   top: 40px;
+}
+
+.container {
+   max-width: 750px;
+   margin: auto;
+   padding: 20px;
+}
+
+.topphoto {
+   width: 100%;
+   right: 0px;
+   bottom: 0px;
+   position: absolute;
+   z-index: -1;
+   opacity: 0.4;
+}
+   .innertop {
+      width: 180px;
+      margin: auto;
+   }
+
+.background {
+   position: absolute;
+   opacity: 1;
+   top: 78%;
+   width: 100%;
+   left: 0px;
+   z-index: -1;
+}  
+
+   .innerbackground {
+      max-width: 750px;
+      margin: auto;
+
+   } 
+
+   .bigbackground {
+      width: 100%;
+      display: none;
+   }
+
+.disclaimer {
+   font-style: italic;
+   font-family: GothamBook;
+}   
+
+.title {
+   color: black;
+   font-family: GothamBold;
+   border-bottom: 2px solid navy; 
+   position: relative; 
+   text-align: center;
+}
+
+.questiontitle {
+   color: black;
+   font-family: GothamBold;
+}
+
+#filingstatus {
+   width: 100%;
+   text-align: left;
+   font-family: GothamBook;
+   padding: 10px;
+   height: 192px;
+   background-color: rgba(0,0,0,0);
+   border: none;
+   font-size: 20px;
+   line-height: 50px;
+   color: black;
+   margin-left: 30px;
+}
+
+   #filingstatus input, label {
+      padding: 10px;
+   }
+
+   #filingstatus input {
+      width: 40px;
+      height: 20px;
+   }
+
+   .separately, .depend {
+      font-family: GothamBook;
+      font-size: 10px;
+      font-style: italic;
+      color: black;
+   }
+
+   #children {
+      width: 100%;
+      text-align: left;
+      font-family: GothamBook;
+      padding: 10px;
+      height: 150px;
+      background-color: rgba(0,0,0,0);
+      border: none;
+      font-size: 20px;
+      line-height: 50px;
+      color: black;
+      margin-left: 30px;
+   }
+
+   #children input, label {
+      padding: 10px;
+
+   }
+
+   #children input {
+      width: 40px;
+      height: 20px;
+   }
+
+
+
+
+
+
+.button{
+   width: 100%;
+   position: relative;
+   height: 40px;
+
+}   
+   .but {
+      background-color: navy;
+      font-family: GothamBold;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+   }
+
+   .next {
+      position: absolute;
+      right: 20px; 
+   }
+
+   .back {
+      position: absolute;
+      left: 20px;
+   }
+
+      .startover {
+         position: absolute;
+         right: 20px;
+      }
+
+   .q2back {
+      display: none;
+   }
+   .q3back {
+      display: none;
+   }
+
+   .q2next {
+      display: none;
+   }
+
+   .q3submit {
+      display: none;
+   }
+
+
+.question2 {
+   display: none;
+}
+
+
+#income {
+   height: 40px;
+   width: 50%;
+   margin-bottom: 40px;
+}
+
+.question3 {
+   display: none;
+}
+
+
+.result {
+   font-family: GothamBold;
+   color: black;
+   display: none;
+   position: relative;
+}
+
+.payment h3{
+   font-size: 20px;
+   margin-bottom: 10px; 
+}
+
+.payment h1{
+   font-size: 30px;
+   margin-bottom: 10px; 
+}
+
+.what {
+   font-family: GothamBook;
+   font-size: 9px;
+   font-style: italic;
+   color: black;
+}
+
+
+
+
+
+@media only screen and (min-width: 750px) {
+   .innerbackground {
+      display: none
+
+   } 
+
+   .bigbackground {
+      display: block;
+   }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+   .background {
+      top: 80%;
+
+   }  
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+   .background {
+      top: 75%;
+
+   }  
+
+
+}
+
+@media only screen and (max-width: 750px) {
+
+   .background {
+      top: 70%;
+
+   }  
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+   .outercontainer {
+      top: 50px;
+   }
+
+   .title {
+      font-size: 13px;
+   }
+
+   .background {
+      top: 65%;
+   }
+
+   #filingstatus {
+      margin-left: 0px;
+      padding: 0px;
+      font-size: 18px;
+   }
+
+   #filingstatus input, label {
+      padding: 0px;
+   }
+
+   .disclaimer {
+      font-size: 12px;
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   .outercontainer {
+         top: 20px;
+      }
+
+   .background {
+      top: 80%;
+   }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+   .outercontainer {
+      top: 100px;
+   }
+
+   .innertop {
+      width: 250px;
+   }
+
+   .title {
+      text-align: center;
+      font-size: 18px;
+   }
+
+   .note {
+      font-size: 13px;
+   }
+
+   .but {
+      font-size: 25px;
+   }
+
+   .questiontitle {
+      font-size: 20px;
+   }
+}
+
+
+
+
+
+

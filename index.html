@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculate your California tax rebate</title>
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<!-- CSS stylesheets -->	
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+  	<div class="outercontainer">
+
+  	<div class="container">
+
+  		
+
+	    <div class="title">
+	    	<h1>Calculate your California tax rebate</h1>
+
+	    	<div class="topphoto">
+	  			<div class="innertop">
+	  				<!-- <img src="img/capitol.png"> -->
+	  			</div>
+  			</div>
+		</div>
+
+	<!-- 	<div class="disclaimer">
+			<p>This calculator is based on the most <a href="https://docs.house.gov/billsthisweek/20201221/BILLS-116HR133SA-RCP-116-68.pdf" target="_blank">recent bill published</a>. If and when a new one is published, this calculator will be updated.</p>
+		</div> -->
+
+		<div class="question1">
+			<div class="questiontitle">
+				<h3> What was your filing status on your most recent tax form?*</h3>
+			</div>
+
+			<form id="filingstatus">
+				<label>
+					<input type="radio" id="single" name="filingstatus" value="single">Single
+				</label>
+				<br>
+
+				<label>
+					<input type="radio" id="married" name="filingstatus" value="married">Married Filing Jointly
+				</label>
+				<br>
+
+				<label>
+					<input type="radio" id="head" name="filingstatus" value="head">Head of Household or qualifying widow(er)
+				</label>
+			</form>
+
+			<div class="note separately">
+				<p>*If you're married and filed separately, choose "Single" on this form.</p>
+			</div>	
+
+		</div>
+
+
+		<div class="question2">
+
+			<div class="questiontitle">
+				<h3> Did you declare any dependents on your most recent tax form?*</h3>
+			</div>
+
+			<form id="children">
+				<label>
+					<input type="radio" id="yes" name="children" value="yes">Yes
+				</label>
+				<br>
+
+				<label>
+					<input type="radio" id="no" name="children" value="no">No
+				</label>
+
+			</form>
+
+			<div class="note depend">
+				<p></p>
+			</div>
+
+		</div>
+
+		<div class="question3">
+
+			<div class="questiontitle">
+				<h3> What was your most recent California adjusted gross income?*</h3>
+			</div>
+
+			<input id="income" type="text" name="income" data-type="currency" placeholder="$50,000">
+
+			<div class="note what">
+				<p>*Adjusted gross income is reported on Line 17 on your 2020 Form 540 or Line 16 on your 2020 Form 540 2EZ.</p>
+			</div>
+
+		</div>
+
+
+
+		<div class="button">
+			<button class="q2back back but">Back</button>
+			<button class="q1next next but">Next</button>
+			<button class="q3back back but">Back</button>
+			<button class="q2next next but">Next</button>
+			<button class="q3submit next but">Submit</button>
+		</div>
+
+		<div class="result">
+			<div class="payment">
+				<h3>Your rebate amount is likely:</h3>
+				<h1>$1,000</h1>
+			</div>
+			<button class="startover but">Start Over</button>
+
+		</div>
+
+		<div class="background">
+			<!-- <div class="innerbackground">
+				<img src="img/bottom-color.png">
+			</div>
+			<div class="bigbackground">
+				<img src="img/bigbg-moved.png">
+			</div> -->
+
+		</div>
+	</div>
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jqueryui.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
+
+
+<!-- Code by Grace Manthey -->
+<!-- Illustrations by Adriana Aguilar -->
+
